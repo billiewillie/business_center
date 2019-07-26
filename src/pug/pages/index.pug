@@ -1,0 +1,45 @@
+extends ../layout/main
+
+block variables
+  - var body__class = 'body'
+  - var wrapper__class = 'wrapper'
+  - var page = 'index'
+
+block content
+  article.homepage__article
+    h1 элитный деловой особняк
+    p Респектабельный деловой особняк B+ с видом на историю: классическая архитектурная традиция в сочетании с современными решениями
+  section.homepage__select.hidden__md
+    select(data-role="floor-select")
+      option(value="") Choose floor
+      option(value="") 1. этаж
+      option(value="") 2. этаж
+      option(value="") 3. этаж
+      option(value="") 4. этаж
+  section.homepage__building.visible__md
+    svg.building-app(viewBox="0 0 1920 953", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", data-floor="floor", data-link="More information")
+      image#bg(xlink:href="./assets/img/main.jpg", width="1920", height="953")
+      image#over-floor1(xlink:href="./assets/img/floor1.png", width="1920", height="953")
+      image#over-floor2(xlink:href="./assets/img/floor2.png", width="1920", height="953")
+      image#over-floor3(xlink:href="./assets/img/floor3.png", width="1920", height="953")
+      image#over-floor4(xlink:href="./assets/img/floor4.png", width="1920", height="953")
+      polygon#floor1(data-floor="1", data-href="https://www.google.ru/", points="640,660 1290,660 1290,840 640,840")
+      polygon#floor2(data-floor="2", data-href="https://www.google.ru/", points="640,460 1290,460 1290,640 640,640")
+      polygon#floor3(data-floor="3", data-href="https://www.google.ru/", points="640,280 1290,280 1290,460 640,460")
+      polygon#floor4(data-floor="4", data-href="https://www.google.ru/", points="640,120 1290,160 1290,279 640,279")
+    a.bubble#bubble-floor1(href="https://www.google.ru/")
+      .bubble__floor 1
+      .bubble__label этаж
+      .bubble__cta более детально
+    a.bubble#bubble-floor2(href="https://www.google.ru/")
+      .bubble__floor 2
+      .bubble__label этаж
+      .bubble__cta более детально
+    a.bubble#bubble-floor3(href="https://www.google.ru/")
+      .bubble__floor 3
+      .bubble__label этаж
+      .bubble__cta более детально
+    a.bubble#bubble-floor4(href="https://www.google.ru/")
+      .bubble__floor 4
+      .bubble__label этаж
+      .bubble__cta более детально

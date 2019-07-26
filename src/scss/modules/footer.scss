@@ -1,0 +1,86 @@
+// footer.footer {
+//   padding: 27px 0;
+//   background-color: $color3;
+//   color: $textColor;
+
+//   & .container {
+//     flex-direction: column;
+//     display: flex;
+//     justify-content: space-between;
+//   }
+
+//   .footer__part {
+//     text-align: center;
+//   }
+
+//   h2.title {
+//     text-transform: uppercase;
+//     letter-spacing: $ls2;
+//     font-size: $fz6;
+//     line-height: $lineHeight2;
+//   }
+
+//   a.button {
+//     border: 2px solid $textColor;
+//     color: $textColor;
+//     display: inline-block;
+//     transition: .2s;
+//   }
+
+//   .email {
+//     font-size: $fz7;
+//     text-transform: lowercase;
+//   }
+
+//   .phone {
+//     letter-spacing: $ls2;
+//     font-size: $fz10;
+//     line-height: $lineHeight2;
+//   }
+// }
+
+// @media (min-width: 768px) {
+//   footer.footer {
+//     & .container {
+//       flex-direction: row;
+//       justify-content: space-between;
+//       align-items: flex-start;
+//     }
+
+//     & h2.title {
+//       text-align: left;
+//       font-size: $fz4;
+//       min-width: 202px;
+//     }
+//   }
+// }
+
+// @media (min-width: 992px) {
+//   footer.footer {
+//     padding: 35px 0;
+
+//     & .footer__part:nth-child(3) {
+//       min-width: 326px;
+//     }
+
+//     & h2.title {
+//       padding-left: 100px;
+//       position: relative;
+//       font-size: $fz8;
+
+//       &::before {
+//         display: block;
+//         position: absolute;
+//         content: "";
+//         left: 0;
+//         top: 0;
+//         width: 75px;
+//         height: 30px;
+//         background-image: url("/assets/img/icons/bird-footer.svg");
+//         background-size: contain;
+//         background-position: 50%;
+//         background-repeat: no-repeat;
+//       }
+//     }
+//   }
+// }

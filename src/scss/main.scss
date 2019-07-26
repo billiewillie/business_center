@@ -1,0 +1,113 @@
+@import "utils/reset";
+@import "utils/vars";
+@import "utils/fonts";
+
+html {
+  font-family: $mainFont;
+  background-color: $white;
+  font-size: $fz8;
+  font-weight: $regular;
+  color: $textColor;
+  line-height: $mainLineHeight;
+}
+
+// Links
+a {
+  text-decoration: none;
+  color: $textColor;
+
+  &:active,
+  &:hover {
+    outline: 0;
+    color: $textColor;
+  }
+}
+
+.wrapper {
+  min-height: 100vh;
+  padding-top: 90px;
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.wrapper.no-scroll {
+  height: 100vh;
+}
+
+.container {
+  padding: 0 30px;
+  max-width: $desktopWidth;
+  width: 100%;
+  margin: 0 auto;
+}
+
+h1.title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+
+.button {
+  padding: 14px 34px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $textColor;
+  font-family: $mainFont;
+  font-size: $fz2;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  transition: .2s;
+}
+
+.visible__sm {
+  display: none;
+}
+
+.visible__md {
+  display: none;
+}
+
+@import "modules/header.scss";
+
+@import "modules/menu.scss";
+
+@import "modules/burger.scss";
+
+@import "modules/form.scss";
+
+@import "modules/socials.scss";
+
+@import "modules/footer.scss";
+
+@import "modules/slick.scss";
+
+@import "modules/slick-theme.scss";
+
+@import "modules/building.scss";
+
+@media (min-width: 768px) {
+  .visible__sm {
+    display: block;
+  }
+
+  .hidden__sm {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .hidden__md {
+    display: none;
+  }
+
+  .visible__md {
+    display: block;
+  }
+
+  .wrapper{
+    padding-top: 0;
+    padding-left: 100px;
+  }
+}

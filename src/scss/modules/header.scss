@@ -1,0 +1,106 @@
+header.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-transform: uppercase;
+  z-index: 5;
+  background-color: $headerColor;
+
+  a.logo {
+    font-size: $fz3;
+    font-weight: $regular;
+    letter-spacing: $ls2;
+    color: $sidebarTextColor;
+    padding-left: 20px;
+    transition: .2s;
+    cursor: pointer;
+    flex: auto;
+    display: flex;
+    flex-direction: column;
+
+    & span{
+      display: block;
+    }
+
+    &:hover{
+      color: $white;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+
+  header.header {
+    bottom: 0;
+    width: 100px;
+    height: auto;
+    flex-direction: column;
+  
+    a.logo {
+      position: absolute;
+      font-size: $fz9;
+      padding-left: 0;
+      order: 2;
+      align-items: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-90deg);
+      flex-direction: row;
+  
+      & span{
+        display: inline-block;
+        margin-right: 10px;
+      }
+  
+      &:hover{
+        color: $white;
+      }
+    }
+  }
+
+  .hotline{
+    z-index: 100;
+    display: block;
+    position: fixed;
+    left: 100px;
+    top: 0;
+    right: 0;
+    border-bottom: 1px solid $borderColor;
+    line-height: 90px;
+    text-align: right;
+    font-size: $fz10;
+
+    & .hotline__number{
+      border-left: 1px solid #deddde;
+      display: inline-block;
+      padding: 0 90px 0 130px;
+      color: $headerColor;
+      position: relative;
+
+      &::before{
+        display: block;
+        position: absolute;
+        content: '';
+        left: 95px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 20px;
+        height: 20px;
+        background-image: url('/assets/img/icons/phone.svg');
+        background-size: contain;
+        background-position: 50%;
+        background-repeat: no-repeat;
+      }
+    }
+
+    & .hotline__prefix {
+      color: $gray2;
+    }
+  }
+
+}
