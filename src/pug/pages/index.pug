@@ -6,16 +6,59 @@ block variables
   - var page = 'index'
 
 block content
+  header.header
+    a.logo 
+      span элитный
+      span деловой
+      span центр
+    .burger
+      input#menu-switch(type="checkbox")
+      nav#navigation
+        ul
+          li.active
+            a(href="/") Главная
+          li
+            a(href="") Характеристики здания
+          li
+            a(href="") Техническое оснащение и сервис
+          li
+            a(href="") Местоположение
+          li
+            a(href="") История и архитектура
+          li
+            a(href="contacts.html") Контакты
+        .quick-contact.visible__md
+          a.logo 
+            span элитный
+            span деловой
+            span центр
+          address 
+            | 190000 Санкт-Петербург,
+            br 
+            | ул. Галерная, д. 73, лит. А
+          p.contacts 
+            | Телефон: 
+            a(href="tel:+78123093524") +7 (812) 309-35-24 
+            br 
+            | e-mail: 
+            a(href="info@angliyskaya70.ru") info@angliyskaya70.ru
+      label.menu-switch(for='menu-switch')
+        span
+  .hotline.visible__md
+    .hotline__number
+      a(href="tel:+78123093524")
+        span.hotline__prefix +7 
+        | (812) 309 35 24
   article.homepage__article
     h1 элитный деловой особняк
     p Респектабельный деловой особняк B+ с видом на историю: классическая архитектурная традиция в сочетании с современными решениями
   section.homepage__select.hidden__md
     select(data-role="floor-select")
-      option(value="") Choose floor
-      option(value="") 1. этаж
-      option(value="") 2. этаж
-      option(value="") 3. этаж
-      option(value="") 4. этаж
+      option(value="") Выберите этаж
+      option(value="") 1 этаж
+      option(value="") 2 этаж
+      option(value="") 3 этаж
+      option(value="") 4 этаж
   section.homepage__building.visible__md
     svg.building-app(viewBox="0 0 1920 953", xmlns="http://www.w3.org/2000/svg", xmlns:xlink="http://www.w3.org/1999/xlink", data-floor="floor", data-link="More information")
       image#bg(xlink:href="./assets/img/main.jpg", width="1920", height="953")

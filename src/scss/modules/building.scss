@@ -1,5 +1,6 @@
 .homepage__article {
   padding: 40px 20px;
+  z-index: 1;
 
   & h1{
     font-size: $fz14;
@@ -8,7 +9,7 @@
     color: $headerColor;
     width: 330px;
     margin-bottom: 40px;
-    font-weight: $light;
+    font-weight: $regular;
   }
 
   & p{
@@ -26,18 +27,18 @@
   min-height: 460px;
 
   & select {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
     appearance: none;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;
+    width: 100%;
     border: 2px solid #ffffff;
     height: 60px;
     color: #a24936;
+    padding: 0 20px;
+    background-color: rgba(255,255,255,.75);
   }
 }
 
@@ -118,7 +119,6 @@
 
   .homepage__article {
     position: absolute;
-    z-index: 10;
     left: 10%;
     top: 50%;
     transform: translate(0, -50%);
@@ -127,6 +127,7 @@
     & h1{
       font-size: $fz15;
       width: 330px;
+      font-weight: 300;
       margin-bottom: 70px;
       margin-top: 0;
     }

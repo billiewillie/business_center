@@ -103,12 +103,14 @@
       text-align: center;
 
       & li{
+        transition: .2s;
         a{
-          font-size: $fz4;
+          font-size: $fz5;
           line-height: $lineHeight2;
         }
 
-        &.active{
+        &.active,
+        &:hover{
           & a{
             color: $linkColor;
           }
@@ -121,6 +123,7 @@
     pointer-events: initial;
     opacity: 1;
     transform: translate(0, 0);
+    cursor: default;
   }
 }
 
@@ -214,6 +217,68 @@
       left: 100px;
       transform: translate(100px, 0);
       justify-content: space-around;
+
+      & ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 50%;
+
+        & li {
+          width: 400px;
+          padding: 2vh 0;
+          text-align: left;
+
+          & a{
+            font-size: $fz8;
+          }
+        }
+      }
+
+      & .quick-contact{
+        flex-basis: 50%;
+
+        & a.logo{
+          position: relative;
+          transform: rotate(0deg);
+          flex-direction: column;
+          left: auto;
+          align-items: flex-start;
+          font-size: $fz13;
+
+          & span{
+            display: block;
+            margin-right: 0;
+          }
+
+          &:hover{
+            color: inherit;
+          }
+        }
+
+        & address{
+          font-style: normal;
+          font-family: $montserratFont;
+          margin: 2em 0;
+          color: $gray2;
+          font-size: $fz5;
+          line-height: 160%;
+        }
+
+        & .contacts{
+          font-style: normal;
+          font-family: $montserratFont;
+          color: $gray2;
+          font-size: $fz5;
+          line-height: 160%;
+
+          & a{
+            color: $stage;
+            font-weight: $semiBold;
+          }
+        }
+      }
     }
   }
 }
