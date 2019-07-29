@@ -105,8 +105,9 @@
       & li{
         transition: .2s;
         a{
-          font-size: $fz5;
+          font-size: $fz8;
           line-height: $lineHeight2;
+          text-transform: initial;
         }
 
         &.active,
@@ -229,10 +230,6 @@
           width: 400px;
           padding: 2vh 0;
           text-align: left;
-
-          & a{
-            font-size: $fz8;
-          }
         }
       }
 

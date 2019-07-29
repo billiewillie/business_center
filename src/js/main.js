@@ -38,7 +38,7 @@ App.building = {
         var top = polygon.position().top;
         var height = polygon.height();
 
-        var l = "65%";
+        var l = "60%";
         var t = parseInt(top + height / 2 + 80);
 
         if ($("#"+ID).length === 0) {
