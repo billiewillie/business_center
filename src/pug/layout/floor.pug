@@ -1,0 +1,56 @@
+block variables
+
+doctype html
+html(lang="en").building-detail
+  head
+    meta(charset="UTF-8")
+    link(rel="shortcut icon" href="./assets/img/icons/favicon.ico" type="image/x-icon")
+    link(rel="icon" href="./assets/img/icons/favicon.ico" type="image/x-icon")
+    link(href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700,700i|Montserrat:300,300i,400,400i,600,600i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    meta(name='description' content="Аренда офиса в Адмиралтейском районе – удобная транспортная развязка, развитая инфраструктура и прекрасный вид из окна на Неву — основные достоинства офисного комплекса.")
+    title Бизнес-центр «Английская 70 / Галерная 73»
+  body(class=body__class)
+    wrapper(class=wrapper__class)
+      header.header
+        a.logo 
+          span элитный
+          span деловой
+          span центр
+        .burger
+          input#menu-switch(type="checkbox")
+          nav#navigation
+            ul
+              li
+                a(href="") Главная
+              li.active
+                a(href="") Характеристики здания
+              li
+                a(href="") Техническое оснащение и сервис
+              li
+                a(href="") Местоположение
+              li
+                a(href="") История и архитектура
+              li
+                a(href="contacts.html") Контакты
+          label.menu-switch(for='menu-switch')
+            span
+      .hotline.visible__md
+        .hotline__number
+          a(href="tel:+78123093524")
+            span.hotline__prefix +7 
+            | (812) 309 35 24
+      section.p-building-detail
+        article.p-building-detail__info
+          block content-1
+          .p-building-detail__image
+            img(src="/assets/img/floor/floor-1.svg", alt="")
+          div.p-building-detail__spaces
+            ul.p-building-detail__space
+              block content-2
+          p
+            block description
+          .p-building-detail__buttons
+            a.btn(href="contacts.html") связаться
+      include ../includes/module/footer

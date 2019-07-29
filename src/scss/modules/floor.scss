@@ -1,0 +1,14 @@
+section.p-building-detail{
+  padding: 10px;
+
+  & article.p-building-detail__info{
+    display: block;
+
+    & h1 {
+      font-size: 30px;
+      font-family: inherit;
+      text-transform: none;
+      letter-spacing: 0;
+    }
+  }
+}
