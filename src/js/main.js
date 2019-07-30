@@ -18,12 +18,9 @@ App.building = {
                 var id = $(this).attr("id");
                 var image = $("#over-"+id);
                 var polygon = $(this);
-
                 $(".bubble").removeClass("show");
-
                 self.root.find("image:not(#bg)").css("opacity", 0);
                 image.css("opacity", 1);
-
                 self.createBubble(polygon, id);
             })
             .on("click", function(){

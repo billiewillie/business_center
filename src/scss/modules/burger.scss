@@ -220,12 +220,16 @@
       justify-content: space-around;
       padding-top: 90px;
 
+      &>*{
+        min-height: 500px;
+      }
+
       & ul {
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
         flex-basis: 50%;
+        justify-content: flex-start;
 
         & li {
           width: 400px;
@@ -236,7 +240,6 @@
 
       & .quick-contact{
         flex-basis: 50%;
-        min-height: 480px;
 
         & a.logo{
           position: relative;

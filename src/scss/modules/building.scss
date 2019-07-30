@@ -115,6 +115,22 @@
       padding: 7px 0;
       text-transform: uppercase;
       font-family: $montserratFont;
+      position: relative;
+
+      &::after{
+        display: block;
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 99%;
+        right: 0;
+        margin: auto;
+        width: 0;
+        height: 0;
+        border-top: 18px solid $baklajan;
+        border-left: 18px solid transparent;
+        border-right: 18px solid transparent;
+      }
     }
   }
 
