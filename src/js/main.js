@@ -191,9 +191,6 @@ App.map = {
         })
     }
 }
-
-var App = App || {};
-
 App.modal = {
 	init: function() {
         var self = this;
@@ -305,8 +302,6 @@ App.workFilter = {
     }
 
 };
-var App = App || {};
-
 $(function(){
 
 	$.each(App, function(index, value){
@@ -338,3 +333,9 @@ $(function(){
 	});
 
 });
+
+// year
+const currentTime = new Date();
+const getYear = currentTime.getFullYear();
+const year = document.querySelector('.year');
+if(year) year.innerHTML = getYear;

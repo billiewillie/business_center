@@ -39,6 +39,7 @@
         font-weight: 700;
         letter-spacing: .05em;
         font-family: $montserratFont;
+        transition: .2s;
       }
 
       &.active{
@@ -65,7 +66,109 @@
       }
 
       & .p-building-detail__space{
-        font-size: $fz6;
+        padding: 20px 0;
+        border-top: 1px solid $borderColor;
+        & li{
+          font-size: $fz6;
+          margin-bottom: 10px;
+          position: relative;
+
+          &:first-child{
+            padding-left: 30px;
+            &::before{
+              display: block;
+              position: absolute;
+              content: '';
+              left: 0;
+              top: 0;
+              width: 20px;
+              height: 15px;
+              background-image: url('/assets/img/icons/check.svg');
+              background-size: contain;
+              background-position: 50%;
+              background-repeat: no-repeat;
+              z-index: -1;
+            }
+          }
+        }
+      }
+
+      & .p-building-detail__buttons{
+        display: flex;
+        justify-content: space-between;
+        margin: 40px 0;
+
+        & .btn {
+          background: $white;
+          padding: 15px 30px;
+          text-align: center;
+          display: inline-block;
+          font-family: $montserratFont;
+          font-size: $fz2;
+          text-decoration: none;
+          font-weight: $semiBold;
+          letter-spacing: $ls1;
+          text-transform: uppercase;
+          color: $stage;
+          cursor: pointer;
+          transition: .2s;
+
+          &:hover {
+            background: $stage;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .building-detail section.p-building-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    min-height: 80vh;
+
+    & .p-building-detail__space{
+      display: inline-block;
+    }
+
+    & .p-building-detail__info {
+      flex-basis: 30%;
+      order: 3;
+
+      & p{
+        font-size: $fz9;
+      }
+    }
+
+    & .p-building-detail__image {
+      flex-basis: 55%;
+      order: 2;
+    }
+
+    & .p-building-detail__nav {
+      padding-top: 0;
+      flex-direction: column;
+      order: 1;
+      position: relative;
+      background-color: transparent;
+
+      & li{
+        margin: .5em 0;
+
+        & a{
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+
+          &:hover{
+            background-color: $borderColor;
+            text-decoration: none;
+          }
+        }
       }
     }
   }

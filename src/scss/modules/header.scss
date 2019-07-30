@@ -40,6 +40,7 @@ header.header {
       position: absolute;
       font-size: $fz9;
       padding-left: 0;
+      color: $sidebarTextColor;
       order: 2;
       align-items: center;
       top: 55%;
@@ -97,6 +98,10 @@ header.header {
     & .hotline__prefix {
       color: $gray2;
     }
+  }
+
+  .wrapper__floor .hotline{
+    background-color: $white;
   }
 
 }

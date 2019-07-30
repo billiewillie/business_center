@@ -218,6 +218,7 @@
       left: 100px;
       transform: translate(100px, 0);
       justify-content: space-around;
+      padding-top: 90px;
 
       & ul {
         display: flex;
@@ -235,6 +236,7 @@
 
       & .quick-contact{
         flex-basis: 50%;
+        min-height: 480px;
 
         & a.logo{
           position: relative;
@@ -243,6 +245,7 @@
           left: auto;
           align-items: flex-start;
           font-size: $fz13;
+          color: $headerColor;
 
           & span{
             display: block;

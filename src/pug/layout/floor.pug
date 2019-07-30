@@ -1,4 +1,6 @@
 block variables
+  - var body__class = 'body'
+  - var wrapper__class = 'wrapper wrapper__floor'
 
 -var floors = { '1': 'floor-1.html', '2': 'floor-2.html', '3': 'floor-3.html', '4': 'floor-4.html'};
 
@@ -25,7 +27,7 @@ html(lang="en").building-detail
           nav#navigation
             ul
               li
-                a(href="") Главная
+                a(href="/") Главная
               li.active
                 a(href="") Характеристики здания
               li
@@ -36,6 +38,21 @@ html(lang="en").building-detail
                 a(href="") История и архитектура
               li
                 a(href="contacts.html") Контакты
+            .quick-contact.visible__md
+              a.logo 
+                span элитный
+                span деловой
+                span центр
+              address 
+                | 190121 Санкт-Петербург,
+                br 
+                | Английская наб., 70
+              p.contacts 
+                | Телефон: 
+                a(href="tel:+78123093524") +7 (812) 309-35-24 
+                br 
+                | e-mail: 
+                a(href="info@angliyskaya70.ru") info@angliyskaya70.ru
           label.menu-switch(for='menu-switch')
             span
       .hotline.visible__md
