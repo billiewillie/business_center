@@ -49,6 +49,7 @@
       }
     }
   } 
+
   section.p-building-detail{
     padding: 40px 10px 10px;
   
@@ -60,6 +61,11 @@
         font-family: inherit;
         text-transform: none;
         letter-spacing: 0;
+        margin-bottom: 1em;
+      }
+
+      & .p-building-detail__space{
+        font-size: $fz6;
       }
     }
   }

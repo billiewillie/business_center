@@ -16,7 +16,7 @@ html(lang="en").building-detail
   body(class=body__class)
     wrapper(class=wrapper__class)
       header.header
-        a.logo 
+        a.logo(href='/')
           span элитный
           span деловой
           span центр
@@ -53,7 +53,7 @@ html(lang="en").building-detail
               li
                 a(href=val)= key
         .p-building-detail__image
-          img(src="/assets/img/floor/floor-1.svg", alt="")
+          block image
         article.p-building-detail__info
           block content-1
           div.p-building-detail__spaces

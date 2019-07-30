@@ -6,7 +6,6 @@ header.header {
   display: flex;
   align-items: center;
   width: 100%;
-  text-transform: uppercase;
   z-index: 5;
   background-color: $headerColor;
 
@@ -14,20 +13,17 @@ header.header {
     font-size: $fz3;
     font-weight: $regular;
     letter-spacing: $ls2;
-    color: $sidebarTextColor;
+    color: $white;
     padding-left: 20px;
     transition: .2s;
     cursor: pointer;
     flex: auto;
     display: flex;
     flex-direction: column;
+    text-transform: uppercase;
 
     & span{
       display: block;
-    }
-
-    &:hover{
-      color: $white;
     }
   }
 }
@@ -46,7 +42,7 @@ header.header {
       padding-left: 0;
       order: 2;
       align-items: center;
-      top: 50%;
+      top: 55%;
       left: 50%;
       transform: translate(-50%, -50%) rotate(-90deg);
       flex-direction: row;
