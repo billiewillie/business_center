@@ -73,6 +73,9 @@ form.form {
 
 @media (min-width: 992px) {
   form.form {
+    padding: 84px 0;
+    background-color: $white;
+    overflow: hidden;
 
     & .container{
       display: flex;
@@ -80,7 +83,22 @@ form.form {
       padding: 0;
       width: 60%;
       max-width: 800px;
-      
+      position: relative;
+      z-index: 1;
+
+      &::before{
+        display: block;
+        position: absolute;
+        content: '';
+        top: 0;
+        right: -30%;
+        bottom: 0;
+        margin: auto;
+        width: 175%;
+        height: 200%;
+        background-color: $borderColor;
+        z-index: -1;
+      }
     }
     
     & .part{
