@@ -61,15 +61,20 @@ header.header {
 
   .hotline{
     z-index: 100;
+    height: 100px;
     display: block;
     position: fixed;
     left: 100px;
     top: 0;
     right: 0;
     border-bottom: 1px solid $borderColor;
-    line-height: 90px;
-    text-align: right;
+    line-height: 100px;
+    justify-content: flex-end;
     font-size: $fz10;
+
+    &.visible__md{
+      display: flex;
+    }
 
     & .hotline__number{
       border-left: 1px solid #deddde;
@@ -98,11 +103,21 @@ header.header {
     & .hotline__prefix {
       color: $gray2;
     }
+
+    & .hotline__home{
+      width: 100px;
+      height: 100px;
+      background-image: url('/assets/img/icons/home.svg');
+      background-size: 25%;
+      background-position: 50%;
+      background-repeat: no-repeat;
+    }
   }
 
   .wrapper__floor .hotline,
   .wrapper__page .hotline{
     background-color: $white;
+    justify-content: space-between;
   }
 
 }
