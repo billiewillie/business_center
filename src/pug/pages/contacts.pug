@@ -1,8 +1,12 @@
-extends ../layout/main
+extends ../layout/page
 
 block variables
   - var body__class = 'body'
-  - var wrapper__class = 'wrapper'
+  - var wrapper__class = 'wrapper wrapper__floor'
+  - var page = 'Контакты'
 
 block content
-  p Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit corporis iusto eos perspiciatis? Aliquam quas aperiam, iure, nihil repellat in quibusdam tenetur rerum enim eum itaque id voluptas, accusamus maiores.
+  main.main
+    .container
+      h1 КОНТАКТЫ
+      p У появились вопросы? Требуется больше деталей? Мы будем рады ответить на ваши вопросы. Хотите организовать личную встречу и экскурсию по зданию? Напишите или позвоните нам, и вместе мы подберем наиболее подходящий вариант.

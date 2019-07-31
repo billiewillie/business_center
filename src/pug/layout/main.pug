@@ -1,5 +1,7 @@
 block variables
 
+-var pages = {'Главная': '/', 'Характеристики здания': 'specification.html', 'Техническое оснащение и сервис': 'service.html', 'Местоположение': 'location.html', 'История и архитектура': 'history.html', 'Фотогалерея': 'gallery.html', 'Контакты': 'contacts.html'};
+
 doctype html
 html(lang="en")
   head
@@ -12,5 +14,43 @@ html(lang="en")
     meta(name='description' content="Аренда офиса в Адмиралтейском районе – удобная транспортная развязка, развитая инфраструктура и прекрасный вид из окна на Неву — основные достоинства офисного комплекса.")
     title Бизнес-центр «Английская 70 / Галерная 73»
   body(class=body__class)
-    wrapper(class=wrapper__class)
+    div(class=wrapper__class)
+      header.header
+        a.logo 
+          span элитный
+          span деловой
+          span особняк
+        .burger
+          input#menu-switch(type="checkbox")
+          nav#navigation
+            ul
+              each val, key in pages
+                if page === key
+                  li.active
+                    a= key
+                else
+                  li
+                    a(href=val)= key
+            .quick-contact.visible__md
+              a.logo 
+                span элитный
+                span деловой
+                span особняк
+              address 
+                | 190121 Санкт-Петербург,
+                br 
+                | Английская наб., 70
+              p.contacts 
+                | Телефон: 
+                a(href="tel:+78123093524") +7 (812) 309-35-24 
+                br 
+                | e-mail: 
+                a(href="info@angliyskaya70.ru") info@angliyskaya70.ru
+          label.menu-switch(for='menu-switch')
+            span
+      .hotline.visible__md
+        .hotline__number
+          a(href="tel:+78123093524")
+            span.hotline__prefix +7 
+            | (812) 309 35 24
       block content

@@ -1,9 +1,0 @@
-- var nav = [{url: 'http://localhost:8081', name: "Главная"},{url: 'building.html', name: "Характеристики здания"},{url: 'service.html', name: "Техническое оснащение и сервис"},{url: 'location.html', name: "Местоположение"},{url: 'history.html', name: "История и архитектура"},{url: 'contacts.html', name: "Контакты"}]
-
-mixin navItem(url, name, current)
-  li(class={active: current})
-    a(href=url)= name
-
-ul.menu
-  each i in nav
-    +navItem(i.url, i.name, i.url == pageUrl)

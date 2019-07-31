@@ -3,54 +3,11 @@ extends ../layout/main
 block variables
   - var body__class = 'body'
   - var wrapper__class = 'wrapper'
-  - var page = 'index'
+  - var page = 'Главная'
 
 block content
-  header.header
-    a.logo 
-      span элитный
-      span деловой
-      span центр
-    .burger
-      input#menu-switch(type="checkbox")
-      nav#navigation
-        ul
-          li.active
-            a Главная
-          li
-            a(href="") Характеристики здания
-          li
-            a(href="") Техническое оснащение и сервис
-          li
-            a(href="") Местоположение
-          li
-            a(href="") История и архитектура
-          li
-            a(href="") Фотогалерея
-          li
-            a(href="contacts.html") Контакты
-        .quick-contact.visible__md
-          a.logo 
-            span элитный
-            span деловой
-            span центр
-          address 
-            | 190121 Санкт-Петербург,
-            br 
-            | Английская наб., 70
-          p.contacts 
-            | Телефон: 
-            a(href="tel:+78123093524") +7 (812) 309-35-24 
-            br 
-            | e-mail: 
-            a(href="info@angliyskaya70.ru") info@angliyskaya70.ru
-      label.menu-switch(for='menu-switch')
-        span
-  .hotline.visible__md
-    .hotline__number
-      a(href="tel:+78123093524")
-        span.hotline__prefix +7 
-        | (812) 309 35 24
+  include ../includes/module/header
+
   article.homepage__article
     h1 элитный деловой особняк
     p Респектабельный деловой особняк B+ с видом на историю: классическая архитектурная традиция в сочетании с современными решениями

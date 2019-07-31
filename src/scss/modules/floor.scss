@@ -9,7 +9,6 @@
       margin: 0 auto;
       max-height: 80vh;
     }
-    
   }
   
   & .p-building-detail__nav {
@@ -151,10 +150,11 @@
 
     & .p-building-detail__nav {
       padding-top: 0;
-      flex-direction: column;
+      flex-direction: column-reverse;
       order: 1;
+      top: inherit;
       position: relative;
-      background-color: transparent;
+      background-color: transparent; 
 
       & li{
         margin: .5em 0;
@@ -167,6 +167,15 @@
           &:hover{
             background-color: $borderColor;
             text-decoration: none;
+          }
+
+          
+        }
+
+        &.active{
+          & a:hover{
+            background: $floorActive;
+            color: $white;
           }
         }
       }

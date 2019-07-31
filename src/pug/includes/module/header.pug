@@ -1,9 +1,38 @@
+-var pages = {'Главная': '/', 'Характеристики здания': 'specification.html', 'Техническое оснащение и сервис': 'service.html', 'Местоположение': 'location.html', 'История и архитектура': 'history.html', 'Фотогалерея': 'gallery.html', 'Контакты': 'contacts.html'};
+
 header.header
   a.logo 
     span элитный
     span деловой
-    span центр
-  include ./burger
+    span особняк
+  .burger
+    input#menu-switch(type="checkbox")
+    nav#navigation
+      ul
+        each val, key in pages
+          if page === key
+            li.active
+              a(href=val)= key
+          else
+            li
+              a(href=val)= key
+      .quick-contact.visible__md
+        a.logo 
+          span элитный
+          span деловой
+          span особняк
+        address 
+          | 190121 Санкт-Петербург,
+          br 
+          | Английская наб., 70
+        p.contacts 
+          | Телефон: 
+          a(href="tel:+78123093524") +7 (812) 309-35-24 
+          br 
+          | e-mail: 
+          a(href="info@angliyskaya70.ru") info@angliyskaya70.ru
+    label.menu-switch(for='menu-switch')
+      span
 .hotline.visible__md
   .hotline__number
     a(href="tel:+78123093524")
