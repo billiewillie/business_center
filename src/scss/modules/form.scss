@@ -42,6 +42,7 @@ form.form {
   & button.button {
     font-size: $fz1;
     padding: 15px;
+    min-height: 52px;
     width: 100%;
     margin-bottom: 0;
   }
@@ -67,9 +68,28 @@ form.form {
         }
       }
     }
-    & .form__field {
-      input.input {
-        &::placeholder {
+  }
+}
+
+@media (min-width: 992px) {
+  form.form {
+
+    & .container{
+      display: flex;
+      justify-content: space-between;
+      padding: 0;
+      width: 60%;
+      max-width: 800px;
+      
+    }
+    
+    & .part{
+      &:first-of-type{
+        width: 40%;
+      }
+      &:last-of-type{
+        width: 55%;
+        & button.button {
         }
       }
     }
