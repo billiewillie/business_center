@@ -33,6 +33,8 @@
 
     & p {
       font-size: $fz3;
+      margin: 0;
+      padding: 35px 0;
       &.footer__address {
         text-align: left;
         flex-basis: 55%;

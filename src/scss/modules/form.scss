@@ -76,6 +76,7 @@ form.form {
     padding: 84px 0;
     background-color: $white;
     overflow: hidden;
+    margin-bottom: 0;
 
     & .container{
       display: flex;
@@ -107,7 +108,25 @@ form.form {
       }
       &:last-of-type{
         width: 55%;
-        & button.button {
+      }
+    }
+
+    & .form__field {
+      margin-bottom: 25px;
+  
+      input.input {
+        font-size: $fz4;
+  
+        &::placeholder {
+          font-size: $fz4;
+        }
+      }
+  
+      textarea.textarea{
+        padding: 15px;
+        font-size: $fz4;
+        &::placeholder {
+          font-size: $fz4;
         }
       }
     }
