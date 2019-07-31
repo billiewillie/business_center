@@ -336,3 +336,23 @@ const currentTime = new Date();
 const getYear = currentTime.getFullYear();
 const year = document.querySelector('.year');
 if(year) year.innerHTML = getYear;
+
+
+// mail
+$(document).ready(function() {
+	$("form.form").submit(function() { //Change
+		var th = $(this);
+		$.ajax({
+			type: "POST",
+			url: "./assets/php/mail.php", //Change
+			data: th.serialize()
+		}).done(function() {
+			alert("Спасибо! Мы с вами скоро свяжемся.");
+			setTimeout(function() {
+				// Done Functions
+                th.trigger("reset");
+			}, 1000);
+		});
+		return false;
+    });
+});

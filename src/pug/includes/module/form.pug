@@ -1,12 +1,17 @@
-form.form(action="" method="get" onsubmit="ym(54476875, 'reachGoal', 'ORDER'); return true;")
-  input(type="hidden" name="project_name" value="spb-panorama")
-  input(type="hidden" name="admin_email" value="panoramacenter@yandex.ru")
-  input(type="hidden" name="form_subject" value="Заявка с общей формы")
-  .form__field
-    input.input(type="text" placeholder="Ваше имя" name='name' required)
-  .form__field
-    input.input(type="text" placeholder="Ваш e-mail" name='email' required)
-  .form__field
-    input.input(type="text" placeholder="Контактный телефон" name='phone' required)
-  .form__field
-    button.button отправить
+form.form
+  .container
+    input(type="hidden" name="project_name" value="Бизнес-центр")
+    input(type="hidden" name="admin_email" value="panoramacenter@yandex.ru")
+    input(type="hidden" name="form_subject" value="Заявка с формы")
+    .part
+      .form__field
+        input.input(type="text" placeholder="Введите ваше имя" name='name' required)
+      .form__field
+        input.input(type="text" placeholder="Введите номер телефона" name='phone' required)
+      .form__field
+        input.input(type="text" placeholder="Введите e-mail" name='email' required)
+    .part
+      .form__field
+        textarea.textarea(type="text" placeholder="Введите вопрос" name='question' required)
+      .form__field
+        button.button связаться

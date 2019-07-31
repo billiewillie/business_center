@@ -30,6 +30,12 @@ a {
   display: flex;
   overflow: hidden;
   flex-direction: column;
+
+  &.wrapper__page{
+    background-color: $white;
+    padding-top: 140px;
+    justify-content: space-between;
+  }
 }
 
 .wrapper.no-scroll {
@@ -38,27 +44,47 @@ a {
 
 .container {
   padding: 0 20px;
-  max-width: $desktopWidth;
   width: 100%;
   margin: 0 auto;
 }
 
+.content{
+  background-color: $white;
+}
+
+main.main{
+  margin-bottom: 40px;
+  & P{
+    color: $textColor;
+  }
+}
+
 h1.title {
-  font-weight: 700;
-  font-size: 24px;
-  margin-bottom: 30px;
+  font-size: $fz14;
+  text-transform: uppercase;
+  font-family: $montserratFont;
+  color: $headerColor;
+  max-width: 330px;
+  margin-bottom: 40px;
+  font-weight: $regular;
 }
 
 .button {
   padding: 14px 34px;
-  border-width: 2px;
-  border-style: solid;
-  border-color: $textColor;
-  font-family: $mainFont;
-  font-size: $fz2;
+  font-family: $montserratFont;
+  font-size: $fz1;
+  font-weight: $semiBold;
   text-transform: uppercase;
   margin-bottom: 10px;
   transition: .2s;
+  background-color: $white;
+  cursor: pointer;
+  color: $stage;
+
+  &:hover{
+    color: $white;
+    background-color: $stage;
+  }
 }
 
 .visible__sm {
@@ -111,10 +137,39 @@ h1.title {
   .wrapper{
     padding-top: 0;
     padding-left: 100px;
+
+    &.wrapper__floor{
+      padding-top: 90px;
+      justify-content: space-between;
+    }
+
+    &.wrapper__page{
+      padding-top: 190px;
+    }
   }
 
-  .wrapper__floor{
-    padding-top: 90px;
-    justify-content: space-between;
+  main.main{
+    margin-bottom: 50px;
+    & .container{
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      align-items: flex-end;
+    }
+
+    & P{
+      &.subtitle{
+        width: 70%;
+        max-width: 800px;
+        align-self: center;
+        font-size: $fz9;
+      }
+    }
+
+    & h1.title{
+      max-width: inherit;
+      width: 85%;
+      font-size: $fz15;
+    }
   }
 }
