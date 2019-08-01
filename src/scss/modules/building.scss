@@ -95,6 +95,12 @@
         opacity: 1;
         letter-spacing: .05em;
       }
+
+      &:nth-of-type(4){
+        &.show{
+          margin-top: 30px;
+        }
+      }
     }
   
     & .bubble__floor {
