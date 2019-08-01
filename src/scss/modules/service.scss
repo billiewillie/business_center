@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
-  height: 50vh;
+  height: 60vh;
   max-height: 760px;
   width: calc(100% + 100% / 3);
   margin-bottom: 30px;
@@ -38,6 +38,50 @@
   }
 }
 
+p.service__text{
+  font-size: $fz12;
+  padding: 0 20px;
+  margin-bottom: 20px;
+}
+
+.serice__link{
+  padding: 20px;
+
+  & a{
+    font-size: $fz5;
+    color: $stage;
+    position: relative;
+    line-height: 1;
+
+    &::after{
+      display: block;
+      position: absolute;
+      content: '';
+      left: 110%;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      width: 75px;
+      height: 7px;
+      background-image: url('/assets/img/icons/arrow-right.svg');
+      background-size: contain;
+      background-position: 50%;
+      background-repeat: no-repeat;
+      transition: .2s;
+    }
+
+    &:hover{
+      &::after{
+        left: 120%;
+      }
+    }
+  }
+}
+
+.serice__link + #footer{
+  background-color: $gray;
+}
+
 @media (min-width: 992px) {
   .service__content{
     justify-content: flex-end;
@@ -64,7 +108,7 @@
       position: absolute;
       content: '';
       top: 0;
-      left: 80%;
+      left: 78.9%;
       bottom: 0;
       margin: auto;
       width: 100%;
@@ -74,10 +118,27 @@
   }
 
   .bg-image {
-    margin-top: -300px;
+    margin: -300px 0 190px 0;
     display: flex;
     align-self: flex-end;
     width: 90%;
     position: relative;
+  }
+
+  p.service__text{
+    font-size: $fz12;
+    display: flex;
+    width: 60%;
+    align-self: center;
+    margin-bottom: 75px;
+    padding: 0;
+  }
+
+  .serice__link{
+    padding: 0px;
+    width: 60%;
+    display: flex;
+    align-self: center;
+    margin-bottom: 135px;
   }
 }
