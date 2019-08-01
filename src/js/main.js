@@ -36,7 +36,7 @@ App.building = {
         var height = polygon.height();
 
         var l = "60%";
-        var t = parseInt(top + height / 2 + 70);
+        var t = parseInt(top + height / 2 + 60);
 
         if ($("#"+ID).length === 0) {
             var bubble = $("<a id='" + ID + "' href='" + polygon.attr("data-href") + "' class='bubble'><div class='bubble__floor'>" + polygon.attr("data-floor") + "</div><div class='bubble__label'>"+this.txtFloor+"</div><div class='bubble__cta'>"+this.txtLink+"</div></a>");

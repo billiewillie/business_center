@@ -1,0 +1,9 @@
+.bg-image {
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 50vh;
+  max-height: 760px;
+  width: calc(100% + 100% / 3);
+}
