@@ -45,6 +45,7 @@ a {
 .container {
   padding: 0 20px;
   width: 100%;
+  max-width: 900px;
   margin: 0 auto;
 }
 
@@ -53,7 +54,7 @@ a {
 }
 
 main.main{
-  margin-bottom: 40px;
+  margin-bottom: 50px;
   & P{
     color: $textColor;
   }
@@ -109,6 +110,8 @@ h1.title {
 
 @import "modules/service.scss";
 
+@import "modules/history.scss";
+
 @import "modules/footer.scss";
 
 @import "modules/slick.scss";
@@ -151,27 +154,29 @@ h1.title {
   }
 
   main.main{
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     & .container{
       display: flex;
+      align-self: center;
       flex-direction: column;
-      padding: 0;
-      align-items: flex-end;
+      padding: 0 10px;
+      align-items: center;
+      width: 100%;
+      max-width: 900px;
     }
 
     & P{
       &.subtitle{
-        width: 60%;
-        max-width: 800px;
         align-self: center;
         font-size: $fz9;
+        padding-left: 140px;
       }
     }
 
     & h1.title{
-      max-width: inherit;
-      width: 85%;
       font-size: $fz15;
+      width: 100%;
+      max-width: inherit;
     }
   }
 }

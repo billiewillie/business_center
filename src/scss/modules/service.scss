@@ -89,18 +89,39 @@ p.service__text{
     justify-content: flex-end;
     padding: 100px 0 370px;
     position: relative;
+    background-color: $white;
+
     & ul.list{
-      width: 85%;
       flex-direction: row;
-      padding-left: 20px;
+      position: relative;
+      z-index: 1;
 
       & .part{
+        padding-left: 20px;
         & ul.list{
           display: flex;
           flex-direction: column;
+          position: relative;
+          z-index: 1;
           & li.item {
             list-style-type: none;
           }
+        }
+      }
+    }
+
+    & .container{
+      &>ul.list{
+        &::after{
+          display: block;
+          position: absolute;
+          content: '';
+          top: -100px;
+          left: -800px;
+          width: 2000px;
+          height: 813px;
+          background-color: $gray;
+          z-index: -1;
         }
       }
     }
@@ -112,39 +133,17 @@ p.service__text{
     align-self: flex-end;
     width: 90%;
     position: relative;
+    z-index: 1;
   }
 
-  p.service__text{
+  .service__text{
     font-size: $fz12;
-    display: flex;
-    width: 60%;
-    align-self: center;
     margin-bottom: 75px;
-    padding: 0;
+    padding: 0 0 0 40px;
   }
 
   .serice__link{
-    padding: 0px;
-    width: 60%;
-    display: flex;
-    align-self: center;
+    padding: 0 0 0 40px;
     margin-bottom: 135px;
-  }
-}
-
-@media (min-width: 1850px){
-  .service__content{
-    &::after{
-      display: block;
-      position: absolute;
-      content: '';
-      top: 0;
-      left: 78.9%;
-      bottom: 0;
-      margin: auto;
-      width: 100%;
-      height: 100%;
-      background-color: $white;
-    }
   }
 }
