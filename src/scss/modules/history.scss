@@ -42,7 +42,7 @@ section.history__block{
 @media (min-width: 992px){
   section.history__block{
     padding: 50px 0;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
     background-color: $white;
     
 
@@ -55,7 +55,7 @@ section.history__block{
         display: block;
         position: absolute;
         content: '';
-        top: -100px;
+        top: -50px;
         right: -100px;
         width: 200%;
         height: 80%;
@@ -101,5 +101,9 @@ section.history__block{
         }
       }
     }
+  }
+
+  section.history__block + #footer{
+    background-color: $gray;
   }
 }
