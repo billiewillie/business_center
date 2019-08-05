@@ -61,7 +61,7 @@ main.main{
 }
 
 h1.title {
-  font-size: $fz14;
+  font-size: $fz11;
   text-transform: uppercase;
   font-family: $montserratFont;
   color: $headerColor;
@@ -111,6 +111,8 @@ h1.title {
 @import "modules/service.scss";
 
 @import "modules/history.scss";
+
+@import "modules/specification.scss";
 
 @import "modules/footer.scss";
 

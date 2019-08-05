@@ -78,10 +78,10 @@ p.service__text{
       }
     }
   }
-}
 
-.serice__link + #footer{
-  background-color: $gray;
+  & + #footer{
+    background-color: $gray;
+  }
 }
 
 @media (min-width: 992px) {

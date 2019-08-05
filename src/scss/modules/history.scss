@@ -1,8 +1,7 @@
 section.history__block{
   display: flex;
   flex-direction: column;
-  padding: 20px 0;
-  margin-bottom: 20px;
+  padding: 30px 0;
   background-color: $gray;
 
   & .part{
@@ -26,15 +25,21 @@ section.history__block{
         color: $gray2;
         font-family: $montserratFont;
         font-size: $fz3;
+        text-align: right;
       }
 
       & .pic{
+        margin-bottom: 10px;
         & img{
           display: block;
           box-shadow: 4px 6px 10px rgba(0, 0, 0, 0.1);
         }
       }
     }
+  }
+
+  & + #footer{
+    background-color: $gray;
   }
 }
 
@@ -88,7 +93,6 @@ section.history__block{
           order: 1;
           padding-right: 30px;
           max-width: 140px;
-          text-align: right;
         }
   
         & .pic{
@@ -101,9 +105,5 @@ section.history__block{
         }
       }
     }
-  }
-
-  section.history__block + #footer{
-    background-color: $gray;
   }
 }
