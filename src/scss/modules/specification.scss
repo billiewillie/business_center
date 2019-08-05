@@ -48,6 +48,7 @@
 }
 
 .safety{
+  margin-bottom: 50px;
   & .container{
     padding: 0px;
     background-position: 50%;
@@ -62,10 +63,130 @@
         padding: 0;
         & .container{
           padding: 0;
-
           & a{
             &::after{
               display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+section.data{
+  margin-bottom: 50px;
+  & .container{
+    padding: 0;
+
+    & h2.title{
+      font-family: $montserratFont;
+      font-size: $fz11;
+      color: $headerColor;
+      font-weight: $semiBold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    & table{
+      display: block;
+
+      & thead{
+        display: block;
+
+        & tr{
+          display: block;
+          position: absolute;
+          top: -9999px;
+          left: -9999px;
+          margin-bottom: 10px;
+
+          & th{
+            display: block;
+          }
+
+          &:nth-child(odd){
+            background-color: $gray;
+          }
+        }
+      }
+
+      & tbody{
+        display: block;
+        & tr{
+          display: block;
+          margin-bottom: 10px;
+
+          & td{
+            border: none;
+            border-bottom: 1px solid $gray;
+            position: relative;
+            padding: 5px 10px 5px 50%;
+            display: block;
+            font-size: $fz5;
+
+            & .check{
+              display: inline-block;
+              width: 15px;
+              height: 10px;
+              background-image: url('/assets/img/icons/check.svg');
+              background-size: contain;
+              background-position: 50%;
+              background-repeat: no-repeat;
+              margin-right: 5px;
+            }
+
+            &::before{
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 10px;
+              width: 45%;
+              font-size: $fz2;
+              font-weight: $semiBold;
+              padding-right: 10px;
+              white-space: nowrap;
+              font-family: $montserratFont;
+            }
+
+            &:nth-child(1)::before{
+              content: "Этаж";
+            }
+
+            &:nth-child(2)::before{
+              content: "Высота потолков, м";
+            }
+
+            &:nth-child(3)::before{
+              content: "Полезная площадь, м²";
+            }
+
+            &:nth-child(4)::before{
+              content: "Статус";
+            }
+
+            &:nth-child(5)::before{
+              content: "Цена за кв. метр";
+            }
+
+            &:nth-child(6){
+              & a{
+                font-family: $montserratFont;
+                font-size: $fz3;
+                color: $stage;
+                font-weight: $semiBold;
+              }
+              
+              &::before{
+                content: "";
+              }
+            }
+          }
+
+          &:nth-child(odd){
+            background-color: $gray;
+            & td{
+              border-bottom: 1px solid $white;
             }
           }
         }
@@ -126,7 +247,7 @@
   }
 
   .safety{
-    margin-top: -150px;
+    margin: -150px 0 150px;
     position: relative;
     z-index: 1;
     & .container{
@@ -144,6 +265,96 @@
               &::after{
                 display: block;
               }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.data{
+    margin-bottom: 100px;
+    & .container{
+      padding: 0 20px;
+  
+      & h2.title{
+        font-size: $fz13;
+        margin-bottom: 50px;
+        text-align: left;
+      }
+  
+      & table{
+        display: table;
+        width: 100%;
+  
+        & thead{
+          display: table-header-group;
+          border-bottom: 4px solid $titleColor;
+  
+          & tr{
+            display: table-row;
+            position: relative;
+            top: inherit;
+            left: inherit;
+            margin-bottom: 0;
+  
+            & th{
+              display: table-cell;
+              padding: 15px;
+              font-size: $fz3;
+              font-family: $montserratFont;
+              text-align: left;
+              color: $headerColor;
+              font-weight: $semiBold;
+
+              &:first-child{
+                text-align: center;
+              }
+            }
+  
+            &:nth-child(odd){
+              background-color: inherit;
+            }
+          }
+        }
+  
+        & tbody{
+          display: table-row-group;
+          & tr{
+            display: table-row;
+            margin-bottom: 10px;
+  
+            & td{
+              border: none;
+              border-bottom: none;
+              padding: 0;
+              display: table-cell;
+              font-size: $fz8;
+              padding: 20px 15px;
+  
+              &::before{
+                display: none;
+              }
+
+              &:first-child{
+                text-align: center;
+              }
+
+              &:nth-child(6){
+                font-size: $fz5;
+              }
+              
+            }
+  
+            &:nth-child(odd){
+              background-color: $white;
+              & td{
+                border-bottom: none;
+              }
+            }
+
+            &:nth-child(even){
+              background-color: $gray;
             }
           }
         }

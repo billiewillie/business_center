@@ -14,7 +14,7 @@ block content
         | Поэтажный формат аренды создает атмосферу клубной приватности. 
         | Особняк идеально подходит на роль представительского офиса компании с высоким статусом.
   .bg-image.spec__image(style="background-image:url('./assets/img/spec-1.jpg')")
-  .spec__list
+  section.spec__list
     .container
       ul
         .part
@@ -35,7 +35,7 @@ block content
               li 3 этаж - 340 м²
               li 4 этаж - 350 м²
           li Нагрузка на пол 400 кг
-  .safety
+  section.safety
     .container(style="background-image:url('./assets/img/service-pic.jpg')")
       .content
         p 
@@ -45,7 +45,60 @@ block content
         .serice__link
           .container
             a(href="./service.html") Техническое оснащение и сервис
-  .questions(style="background-image:url('./assets/img/spec-2.jpg')")
+  section.data
+    .container
+      h2.title Помещения в аренду
+      table(role="table")
+        thead(role="rowgroup")
+          tr(role="row")
+            th(role="columnheader") Этаж
+            th(role="columnheader") Высота потолков, м
+            th(role="columnheader") Полезная площадь, м²
+            th(role="columnheader") Статус
+            th(role="columnheader") Цена за кв. метр
+            th(role="columnheader") 
+        tbody(role="rowgroup")
+          tr(role="row")
+            td(role="cell") 4.
+            td(role="cell") 2.7
+            td(role="cell") 350
+            td(role="cell") 
+              span.check
+              | Свободно
+            td(role="cell") 1 300 р. + НДС 20%
+            td(role="cell") 
+              a(href="./floor-4.html") Подробнее
+          tr(role="row")
+            td(role="cell") 3.
+            td(role="cell") 3.6 - 3.7
+            td(role="cell") 340
+            td(role="cell")
+              span.check
+              | Свободно
+            td(role="cell") 1 300 р. + НДС 20%
+            td(role="cell") 
+              a(href="./floor-3.html") Подробнее
+          tr(role="row")
+            td(role="cell") 2.
+            td(role="cell") 2.8 - 3.6
+            td(role="cell") 370
+            td(role="cell")
+              span.check
+              | Свободно
+            td(role="cell") 1 300 р. + НДС 20%
+            td(role="cell") 
+              a(href="./floor-2.html") Подробнее
+          tr(role="row")
+            td(role="cell") 1.
+            td(role="cell") 3.7 - 4.2
+            td(role="cell") 83
+            td(role="cell")
+              span.check
+              | Свободно
+            td(role="cell") 1 300 р. + НДС 20%
+            td(role="cell") 
+              a(href="./floor-1.html") Подробнее
+  section.questions(style="background-image:url('./assets/img/spec-2.jpg')")
     .container
       p 
         | У появились вопросы? 
