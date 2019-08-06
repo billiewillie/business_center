@@ -46,7 +46,7 @@ p.service__text{
 }
 
 .serice__link{
-  padding: 20px;
+  padding: 20px 20px 20px 0;
 
   & a{
     font-size: $fz5;
@@ -54,23 +54,6 @@ p.service__text{
     position: relative;
     line-height: 1;
     font-family: $montserratFont;
-
-    &::after{
-      display: block;
-      position: absolute;
-      content: '';
-      left: 110%;
-      top: 0;
-      bottom: 0;
-      margin: auto;
-      width: 75px;
-      height: 7px;
-      background-image: url('/assets/img/icons/arrow-right.svg');
-      background-size: contain;
-      background-position: 50%;
-      background-repeat: no-repeat;
-      transition: .2s;
-    }
 
     &:hover{
       &::after{
@@ -145,5 +128,24 @@ p.service__text{
   .serice__link{
     padding: 0 0 0 40px;
     margin-bottom: 135px;
+
+    & a{
+      &::after{
+        display: block;
+        position: absolute;
+        content: '';
+        left: 110%;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        width: 75px;
+        height: 7px;
+        background-image: url('/assets/img/icons/arrow-right.svg');
+        background-size: contain;
+        background-position: 50%;
+        background-repeat: no-repeat;
+        transition: .2s;
+      }
+    }
   }
 }
