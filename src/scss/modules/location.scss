@@ -96,6 +96,7 @@
 }
 
 .serice__link.location--link{
+  margin-bottom: 40px;
   & + #footer{
     background-color: $white;
   }
@@ -192,9 +193,9 @@
       justify-content: space-between;
       align-items: center;
       flex-wrap: wrap;
-      padding: 50px 200px;
+      padding: 50px;
       & li.item{
-        width: 26%;
+        width: 33%;
         & span.icon{
           width: 45px;
           height: 45px;
@@ -209,6 +210,19 @@
           margin-bottom: 0;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 1800px){
+  & ul{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px;
+    & li.item{
+      width: 26%;
     }
   }
 }

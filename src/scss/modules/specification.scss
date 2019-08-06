@@ -31,6 +31,7 @@
   & a.button {
     background-color: transparent;
     border: 1px solid $stage;
+    font-size: $fz2;
 
     &:hover{
       border: 1px solid $white;
@@ -247,7 +248,7 @@ section.data{
   }
 
   .safety{
-    margin: -150px 10px 150px;
+    margin: -150px 0 150px;
     position: relative;
     z-index: 1;
     & .container{
@@ -275,7 +276,7 @@ section.data{
   section.data{
     margin-bottom: 100px;
     & .container{
-      padding: 0 10px;
+      padding: 0;
       & h2.title{
         font-size: $fz13;
         margin-bottom: 50px;

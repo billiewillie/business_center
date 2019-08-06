@@ -156,7 +156,7 @@ App.map = {
                 position: new google.maps.LatLng(lat, lng),
                 map: map,
                 icon: {
-                    url: "/images/map/"+type+".png",
+                    url: "/img/icons/"+type+".png",
                     size: new google.maps.Size(50, 60),
                     scaledSize: new google.maps.Size(50, 60)
                 }
