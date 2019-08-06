@@ -91,31 +91,8 @@ App.gallery = {
         });
 
         $("[data-gallery]").masonry({
-            // options
             itemSelector: '.gallery__item',
         });
-
-    /*var len = $(".gallery__item").length;
-
-    var that = this;
-    var $car = this.root.flickity({
-        prevNextButtons: false,
-        pageDots: false,
-        cellAlign: "left",
-        wrapAround: true
-    });
-
-    var flkty = $car.data("flickity");
-
-    $car.on( 'select.flickity', function() {
-        update(flkty.selectedIndex + 1)
-    });
-
-    function update(index) {
-        that.state.html( "<strong>" + (index < 10 ? '0' : '') + index.toString() + '</strong> / ' + (len < 10 ? '0' : '') + len.toString() );
-    }
-    update(1);
-    */
     }
 };
 App.layout = {

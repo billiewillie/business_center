@@ -101,6 +101,14 @@
   }
 }
 
+#gmap{
+  width: 100%;
+  & iframe{
+    width: 100%;
+    min-height: 735px;
+  }
+}
+
 @media (min-width: 992px){
   .panel {
     margin: 200px 0;
