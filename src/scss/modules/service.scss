@@ -67,6 +67,12 @@ p.service__text{
   }
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  .bg-image {
+    background-attachment: scroll;
+  }
+}
+
 @media (min-width: 992px) {
   .service__content{
     justify-content: flex-end;
