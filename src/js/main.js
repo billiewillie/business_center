@@ -1,3 +1,6 @@
+import * as fancybox from './component/fancybox'
+import * as masonry from './component/masonry'
+
 var App = App || {};
 App.building = {
     root: $(".building-app"),

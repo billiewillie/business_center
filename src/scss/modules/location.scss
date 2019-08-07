@@ -215,14 +215,12 @@
 }
 
 @media (min-width: 1800px){
-  & ul{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px;
-    & li.item{
-      width: 26%;
+  .icons__outter{
+  
+    & ul{
+      & li.item{
+        width: 26%;
+      }
     }
   }
 }

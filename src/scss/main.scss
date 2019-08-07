@@ -116,6 +116,8 @@ h1.title {
 
 @import "modules/location.scss";
 
+@import "modules/gallery.scss";
+
 @import "modules/footer.scss";
 
 @import "modules/slick.scss";
@@ -174,6 +176,7 @@ h1.title {
         align-self: center;
         font-size: $fz9;
         padding-left: 140px;
+        margin-top: 120px;
       }
     }
 
@@ -181,7 +184,7 @@ h1.title {
       font-size: $fz15;
       width: 100%;
       max-width: inherit;
-      margin-bottom: 120px;
+      margin-bottom: 0px;
     }
   }
 }
