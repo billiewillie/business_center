@@ -130,13 +130,19 @@
     padding: 30px;
     min-height: 80vh;
 
-    & .p-building-detail__space{
-      display: inline-block;
-    }
+    
 
-    & .p-building-detail__info {
+    & article.p-building-detail__info {
       flex-basis: 30%;
       order: 3;
+
+      & .p-building-detail__space{
+        display: inline-block;
+  
+        & li {
+          font-size: $fz9;
+        }
+      }
 
       & p{
         font-size: $fz9;

@@ -80,6 +80,10 @@
       background: #201e21;
       color: $white;
       transition: all 0.3s ease-in-out;
+      -webkit-transform: translate(0, -70%);
+      -moz-transform: translate(0, -70%);
+      -ms-transform: translate(0, -70%);
+      -o-transform: translate(0, -70%);
       transform: translate(0, -70%);
       margin-top: -20px;
       pointer-events: none;
