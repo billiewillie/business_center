@@ -11,14 +11,16 @@
   flex-direction: column;
   width: 100%;
 
-  // & .container{
-
-  // }
+  & .container{
+    & .popup{
+      display: none;
+    }
+  }
 
   & p {
     margin: 1em 0;
 
-    &.footer__copy a{
+    &.footer__copy a {
       font-weight: $bold;
       display: block;
       margin-top: 5px;
@@ -27,6 +29,7 @@
 }
 
 @media (min-width: 992px) {
+
   #footer {
     display: flex;
     flex-direction: row;
@@ -38,6 +41,43 @@
     & .container{
       display: flex;
       justify-content: space-between;
+
+      & .popup {
+        display: none;
+        &.active{
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          display: flex;
+          background-color: rgba(0,0,0,.8);
+          z-index: 11;
+
+          & .map{
+            margin: auto;
+            width: 80%;
+            position: relative;
+            & span.close{
+              background-image: url('/assets/img/icons/cancel.png');
+              background-position: 50%;
+              background-repeat: no-repeat;
+              background-size: contain;
+              width: 20px;
+              height: 20px;
+              position: absolute;
+              left: 101%;
+              top: 0;
+              cursor: pointer;
+            }
+            & iframe{
+              min-height: inherit;
+              padding: 7px;
+              background-color: $white;
+            }
+          }
+        }
+      }
     }
 
     & p {
@@ -50,6 +90,7 @@
         padding-left: 40px;
         position: relative;
         color: $stage;
+        cursor: pointer;
 
         &::before{
           display: block;

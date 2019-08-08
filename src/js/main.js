@@ -335,4 +335,14 @@ $(document).ready(function() {
 		});
 		return false;
     });
+
+    if(window.innerWidth > 991 && $('footer#footer.footer').length) {
+        $('p.footer__address').on('click', function(e) {
+            $('footer#footer.footer .popup').addClass('active');
+        })
+
+        $('span.close').on('click', function(e) {
+            $('footer#footer.footer .popup.active').removeClass('active');
+        })
+    }
 });
