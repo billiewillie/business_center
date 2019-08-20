@@ -139,6 +139,17 @@ section.data{
               margin-right: 5px;
             }
 
+            & .cancel{
+              display: inline-block;
+              width: 15px;
+              height: 10px;
+              background-image: url('/assets/img/icons/red-cross.svg');
+              background-size: contain;
+              background-position: 50%;
+              background-repeat: no-repeat;
+              margin-right: 5px;
+            }
+
             &::before{
               position: absolute;
               top: 50%;
