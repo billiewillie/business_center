@@ -35,11 +35,11 @@ App.building = {
         var self = this;
 
         var ID = "bubble-"+id;
-        var top = polygon.position().top;
+        var top = polygon[0].getBoundingClientRect().top;
         var height = polygon.height();
 
         var l = "60%";
-        var t = parseInt(top + height / 2 + 50);
+        var t = parseInt(top + height/2 + 50)+'px';
 
         if ($("#"+ID).length === 0) {
             var bubble = $("<a id='" + ID + "' href='" + polygon.attr("data-href") + "' class='bubble'><div class='bubble__floor'>" + polygon.attr("data-floor") + "</div><div class='bubble__label'>"+this.txtFloor+"</div><div class='bubble__cta'>"+this.txtLink+"</div></a>");
@@ -53,13 +53,12 @@ App.building = {
         }
 
         bubble.css({left: l, top: t});
-        setTimeout(function(){
+        setTimeout(function() {
             bubble.addClass("show");
-        })
+        });
     },
 
     openDetail: function(url) {
-        console.log(url)
         location.href = url
     }
 };
