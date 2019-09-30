@@ -1,0 +1,298 @@
+extends ../layout/page
+
+block variables
+  - var page = 'Помещения в аренду'
+
+block content
+  section.rent
+    .container
+      h1.title
+        | помещения 
+        br
+        | в аренду
+      h2.title Бизнес-центр категории B+
+      table(role="table")
+        thead(role="rowgroup")
+          tr(role="row")
+            th(role="columnheader") Этаж
+            th(role="columnheader") Высота потолков, м
+            th(role="columnheader") Полезная площадь, м²
+            th(role="columnheader") Статус
+            th(role="columnheader") Цена за м²
+            th(role="columnheader") 
+        tbody(role="rowgroup")
+          tr(role="row")
+            td(role="cell") 4.
+            td(role="cell") 2.7
+            td(role="cell") 350
+            td(role="cell") 
+              span.cancel
+              | Недоступно
+            td(role="cell") 1 300 р. + НДС 20%
+            td(role="cell") 
+              a(href="./floor-4.html") Подробнее
+          tr(role="row")
+            td(role="cell") 3.
+            td(role="cell") 3.6 - 3.7
+            td(role="cell") 340
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") 1 300 р. + НДС 20%
+            td(role="cell") 
+              a(href="./floor-3.html") Подробнее
+          tr(role="row")
+            td(role="cell") 2.
+            td(role="cell") 2.8 - 3.6
+            td(role="cell") 197
+            td(role="cell")
+              span.check
+              | Свободно
+            td(role="cell") 1 300 р. + НДС 20%
+            td(role="cell") 
+              a(href="./floor-2.html") Подробнее
+          tr(role="row")
+            td(role="cell") 1.
+            td(role="cell") 3.7 - 4.2
+            td(role="cell") 83
+            td(role="cell")
+              span.check
+              | Свободно
+            td(role="cell") 1 300 р. + НДС 20%
+            td(role="cell") 
+              a(href="./floor-1.html") Подробнее
+      h2.title Бизнес-центр категории B
+      table.table-b(role="table")
+        thead(role="rowgroup")
+          tr(role="row")
+            th(role="columnheader") Этаж
+            th(role="columnheader") Помещение
+            th(role="columnheader") Высота потолков, м
+            th(role="columnheader") Полезная площадь, м²
+            th(role="columnheader") Статус
+            th(role="columnheader") Цена за м²
+            th(role="columnheader") Подробнее
+        tbody(role="rowgroup")
+          tr(role="row")
+            td(role="cell") 1.
+            td(role="cell") 101
+            td(role="cell") 2.8
+            td(role="cell") 32.8
+            td(role="cell") 
+              span.check
+              | Свободно
+            td(role="cell") 1 000 р. + НДС 20%
+            td(role="cell") Отдельный вход, с/у
+          tr(role="row")
+            td(role="cell") 2.
+            td(role="cell") 201
+            td(role="cell") 3.0
+            td(role="cell") 102.2
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 2.
+            td(role="cell") 204
+            td(role="cell") 3.0
+            td(role="cell") 23.1
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 2.
+            td(role="cell") 205
+            td(role="cell") 3.0
+            td(role="cell") 50.3
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 2.
+            td(role="cell") 206
+            td(role="cell") 3.0
+            td(role="cell") 338.6
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 2.
+            td(role="cell") 207
+            td(role="cell") 3.0
+            td(role="cell") 53.8
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") с/у
+          tr(role="row")
+            td(role="cell") 3.
+            td(role="cell") 301
+            td(role="cell") 2.8
+            td(role="cell") 101.1
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 3.
+            td(role="cell") 304
+            td(role="cell") 2.8
+            td(role="cell") 22.3
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 3.
+            td(role="cell") 306
+            td(role="cell") 2.8
+            td(role="cell") 346.7
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 3.
+            td(role="cell") 307
+            td(role="cell") 2.8
+            td(role="cell") 46.1
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") с/у
+          tr(role="row")
+            td(role="cell") 4.
+            td(role="cell") 401
+            td(role="cell") 2.8
+            td(role="cell") 98.8
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 4.
+            td(role="cell") 404
+            td(role="cell") 2.8
+            td(role="cell") 22.3
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 4.
+            td(role="cell") 405
+            td(role="cell") 2.8
+            td(role="cell") 38
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 4.
+            td(role="cell") 406
+            td(role="cell") 2.6
+            td(role="cell") 233
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 4.
+            td(role="cell") 407
+            td(role="cell") 2.8
+            td(role="cell") 44.4
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") с/у
+          tr(role="row")
+            td(role="cell") 5.
+            td(role="cell") 501
+            td(role="cell") 2.6
+            td(role="cell") 102.9
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 5.
+            td(role="cell") 504
+            td(role="cell") 2.6
+            td(role="cell") 23.5
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 5.
+            td(role="cell") 505
+            td(role="cell") 2.8
+            td(role="cell") 50.9
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 5.
+            td(role="cell") 506
+            td(role="cell") 2.6
+            td(role="cell") 339.8
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") 
+          tr(role="row")
+            td.invisible__md(role="cell") 5.
+            td(role="cell") 507
+            td(role="cell") 2.8
+            td(role="cell") 45.4
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") с/у
+          tr(role="row")
+            td(role="cell") 6.
+            td(role="cell") 601
+            td(role="cell") 2.6
+            td(role="cell") 61.9
+            td(role="cell")
+              span.cancel
+              | Недоступно
+            td(role="cell") -
+            td(role="cell") с/у
+      p.note Возможен вход с Галерной улицы
+  section.questions(style="background-image:url('./assets/img/offices.jpg')")
+    .container
+      p 
+        | У вас появились вопросы? 
+        br
+        | Требуется больше деталей? 
+        br 
+        | Мы будем рады ответить на ваши вопросы. 
+        | Хотите организовать личную встречу и экскурсию по зданию? 
+        br 
+        | Напишите или позвоните нам, и вместе мы подберем наиболее подходящий вариант.
+      a.button(href="./contacts.html") связаться

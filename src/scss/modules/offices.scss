@@ -1,0 +1,124 @@
+section.rent{
+  & .container{
+    padding: 0;
+    & h1.title{
+      padding: 0 20px;
+    }
+    & h2.title{
+      font-family: $montserratFont;
+      font-size: $fz9;
+      color: $headerColor;
+      font-weight: $semiBold;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    & table{
+      margin-bottom: 110px;
+      &.table-b{
+        margin-bottom: 25px;
+        & tbody{
+          & tr{
+            & td{
+              min-height: 29px;
+              &:nth-child(1)::before{
+                content: "Этаж";
+              }
+              &:nth-child(2)::before{
+                content: "Помещение";
+              }
+              &:nth-child(3)::before{
+                content: "Высота потолков, м";
+              }
+              &:nth-child(4)::before{
+                content: "Полезная площадь, м²";
+              }
+              &:nth-child(5)::before{
+                content: "Статус";
+              }
+              &:nth-child(6)::before{
+                content: "Цена за м²";
+              }
+              &:last-child::before{
+                content: "Подробнее";
+              }
+            }
+          }
+        }
+      }
+    }
+    p.note{
+      font-size: $fz3;
+      text-align: center;
+      font-weight: $semiBold;
+      color: $gray2;
+      margin-bottom: 70px;
+    }
+  }
+  & + #footer{
+    background-color: $gray;
+  }
+}
+
+@media (min-width: 992px) {
+  section.rent{
+    & .container{
+      padding: 0;
+      & h1.title{
+        font-size: $fz15;
+        width: 100%;
+        max-width: inherit;
+        margin-bottom: 120px;
+        padding: 0;
+      }
+      & h2.title{
+        font-size: $fz13;
+        margin-bottom: 50px;
+        text-align: left;
+      }
+      & table{
+        margin-bottom: 110px;
+        &.table-b{
+          & tbody{
+            & tr{
+              & td{
+                &.invisible__md{
+                  color: transparent;
+                }
+                &:nth-child(1)::before{
+                  content: "Этаж";
+                }
+                &:nth-child(2)::before{
+                  content: "Помещение";
+                }
+                &:nth-child(3)::before{
+                  content: "Высота потолков, м";
+                }
+                &:nth-child(4)::before{
+                  content: "Полезная площадь, м²";
+                }
+                &:nth-child(5){
+                  min-width: 140px;
+                  &::before{
+                    content: "Статус";
+                  }
+                } 
+                &:nth-child(6){
+                  min-width: 160px;
+                  text-align: center;
+                  &::before{
+                    content: "Цена за м²";
+                  }
+                } 
+                &:last-child{
+                  &::before{
+                    content: "Подробнее";
+                  }
+                } 
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
