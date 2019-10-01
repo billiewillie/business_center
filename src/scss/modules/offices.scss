@@ -52,6 +52,7 @@ section.rent{
       font-weight: $semiBold;
       color: $gray2;
       margin-bottom: 70px;
+      font-family: $montserratFont;
     }
   }
   & + #footer{
@@ -103,7 +104,7 @@ section.rent{
                   }
                 } 
                 &:nth-child(6){
-                  min-width: 160px;
+                  min-width: 180px;
                   text-align: center;
                   &::before{
                     content: "Цена за м²";
