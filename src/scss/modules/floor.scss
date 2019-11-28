@@ -21,6 +21,7 @@
     padding: 8px;
     right: 0;
     background: $white;
+    z-index: 1;
 
     & li {
       display: block;
@@ -61,52 +62,91 @@
         font-family: inherit;
         text-transform: none;
         letter-spacing: 0;
+        padding-bottom: 1em;
         margin-bottom: 1em;
       }
 
-      & .p-building-detail__space{
-        padding: 20px 0;
-        border-top: 1px solid $borderColor;
-        & li{
-          font-size: $fz6;
-          margin-bottom: 10px;
-          position: relative;
-
-          &:first-child{
-            padding-left: 30px;
-            &::before{
-              display: block;
-              position: absolute;
-              content: '';
-              left: 0;
-              top: 0;
-              width: 20px;
-              height: 15px;
-              background-image: url('/assets/img/icons/check.svg');
-              background-size: contain;
-              background-position: 50%;
-              background-repeat: no-repeat;
-              z-index: -1;
-            }
-            &.cancel{
+      & .p-building-detail__spaces{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        & .p-building-detail__space{
+          padding: 20px 0;
+          width: 48%;
+          border-top: 1px solid $borderColor;
+          & li{
+            font-size: $fz6;
+            margin-bottom: 10px;
+            position: relative;
+  
+            &:first-child{
+              padding-left: 30px;
               &::before{
                 display: block;
                 position: absolute;
                 content: '';
                 left: 0;
-                top: 5px;
+                top: 0;
                 width: 20px;
                 height: 15px;
-                background-image: url('/assets/img/icons/red-cross.svg');
+                background-image: url('/assets/img/icons/check.svg');
                 background-size: contain;
                 background-position: 50%;
                 background-repeat: no-repeat;
                 z-index: -1;
               }
+              &.cancel{
+                &::before{
+                  display: block;
+                  position: absolute;
+                  content: '';
+                  left: 0;
+                  top: 2px;
+                  width: 20px;
+                  height: 15px;
+                  background-image: url('/assets/img/icons/red-cross.svg');
+                  background-size: contain;
+                  background-position: 50%;
+                  background-repeat: no-repeat;
+                  z-index: -1;
+                }
+              }
+              & span{
+                margin-right: 5px;
+                &:nth-of-type(2){
+                  margin-left: 5px;
+                }
+                & img{
+                  display: inline-block;
+                  margin-top: -3px;
+                }
+              }
+            }
+          }
+          &:nth-child(2){
+            & li{
+              &:first-child{
+                &::before{
+                  background-image: url('/assets/img/icons/check-blue.svg');
+                }
+              }
+            }
+          }
+          &:nth-child(3) {
+            width: 100%;
+            & li{
+              padding-left: 0px;
+              &:first-child{
+                &::before{
+                  display: none;
+                }
+              }
             }
           }
         }
       }
+
+      
 
       & .p-building-detail__buttons{
         display: flex;
